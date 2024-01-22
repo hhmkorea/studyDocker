@@ -11,7 +11,6 @@ import shop.mtcoding.product.model.ProductRepository;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:3000")
 @RequiredArgsConstructor
 @RestController
 public class ProductController {
