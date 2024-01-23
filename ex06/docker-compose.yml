@@ -5,7 +5,7 @@ services:
     volumes:
       - ./data:/var/lib/mysql
     environment:
-      - MYSQL_ROOT_PASSWORD=dotdot00!
+      - MYSQL_ROOT_PASSWORD=root1234
       - MYSQL_DATABASE=rootdb
 #    ports:
 #      - "3306:3306"
