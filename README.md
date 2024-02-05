@@ -1,22 +1,20 @@
-### Docker 입문 실습
+### study Docker
+####
+### *** 폴더별 정보 ***
+####
+#### + ex 시리즈 : 도커입문 - 메타코딩
+> https://github.com/codingspecialist/docker-study
 
-### 참고강의
-''' 유튜브 : 도커입문 - 메타코딩
-https://www.youtube.com/playlist?list=PL93mKxaRDidGMzIllhYKx1d6aMg6_5wW3
-'''
-
-### ex01
-### ex02
-### ex03
-### ex04
-### ex05
-### ex06
-### ex07
-### ex08
-### ex09 
-''' 27~30강
-    27강 - 도커컴포즈 Spring 앱 만들어보기
-    28강 - 도커컴포즈 Nginx로 html 실행해보기
-    29강 - 도커컴포즈 React build 도커 Nginx로 실행
-    30강 - 도커컴포즈 Dockerfile와 빌드와 Nginx한번에
-'''
+> https://www.youtube.com/playlist?list=PL93mKxaRDidGMzIllhYKx1d6aMg6_5wW3
++ ex01 : 14강, Dockerfile Entrypoint와 Workdir
++ ex02 : 15강, Dockerfile RUN 명렁어
++ ex03 : 16강, Dockerfile Nginx 설정 
++ ex04 : 18강, Dockerfile Nginx를 로비 서버로 활용
++ ex05 : 20강, Dockerfile MYSQL 환경변수와 볼륨연결 
++ ex06 : 21강, DockerCompose 기본
++ ex07 : 22강, DockerCompose 튜토리얼
++ ex08 : 23강, DockerCompose Spring & MYSQL 
++ ex09 : 24~33강, DockerCompose Dockerfile(React & Spring & MYSQL)
+###
+#### + my-pjt 시리즈  +
++ my-pjt : 
