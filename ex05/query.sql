@@ -1,7 +1,7 @@
-CREATE DATABASE testerdb; -- 직접 만들어야 하는데?
+CREATE DATABASE ssardb CHARACTER SET utf8mb4 DEFAULT COLLATE utf8mb4_general_ci;
 
 SHOW VARIABLES LIKE 'character_set_%';
-# use testerdb;
+# use ssardb;
 create table person(
                        id int primary key ,
                        name varchar(100)
