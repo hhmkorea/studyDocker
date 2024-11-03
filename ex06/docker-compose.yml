@@ -3,7 +3,8 @@ services:
     image: mysql
     restart: always
     volumes:
-      - ./data:/var/lib/mysql
+      - ./data:/var/lib/mysql # host(로컬)시스템 볼륨 연결
+      #- mysql-compose-volume:/var/lib/mysql # 이름있는 볼륨 사용하기 - Docker 볼륨
     environment:
       - MYSQL_ROOT_PASSWORD=root1234
       - MYSQL_DATABASE=rootdb
