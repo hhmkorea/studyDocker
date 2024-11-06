@@ -4,10 +4,11 @@ services:
     build:
       context: ./docker-test-db
       dockerfile: Dockerfile
+    # 접근 포트 설정 (컨테이너 외부:컨테이너 내부)
     ports:
-      - 3306:3306
+      - 3306:3307 #mysql 3307로 설치함(mariaDB가 3306로 설치되어 있어서 바꿈)
     volumes:
-      - ./docker-test-db/store:/var/lib/mariadb
+      - ./docker-test-db/store:/var/lib/mysql
     networks:
       - network
   server:
@@ -15,13 +16,14 @@ services:
       context: ./docker-test-server
       dockerfile: Dockerfile
     restart: always
+    # 접근 포트 설정 (컨테이너 외부:컨테이너 내부)
     ports:
-      - 8080:8080
+      - 8080:8080 #8080 사용중이면 앞에만 8081 포트로 변경해서 테스트
     depends_on:
       - db  # db가 준비되면 실행됨.
     environment: # application.yml에 사용될 환경변수 설정.
-      SPRING_DATASOURCE_URL: jdbc:mariadb://db:3306/ssardb?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false&allowPublicKeyRetrieval=true
-      SPRING_DATASOURCE_DRIVER: org.mariadb.jdbc.Driver
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/metadb?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_DRIVER: com.mysql.cj.jdbc.Driver
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root1234
     networks:
