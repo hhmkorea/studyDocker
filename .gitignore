@@ -3,6 +3,7 @@
 /ex06/data/
 /ex08/docker-test-db/store/
 /ex08/docker-test-server/.gradle/
+/ex08/docker-test-server/build/
 /ex09/.idea/
 /ex09/db/store/
 /ex09/product/gradle/
@@ -10,4 +11,3 @@
 /ex09/product/.gradle/
 /ex09/product/.idea/
 /ex09/product/build/
-/ex08/docker-test-server/build/
