@@ -36,5 +36,5 @@ tasks.named('test') {
 }
 
 jar {
-	enabled = false // jar 파일 하나만 생김.
+	enabled = false
 }

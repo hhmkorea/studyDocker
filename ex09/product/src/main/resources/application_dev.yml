@@ -3,10 +3,10 @@ server:
 
 spring:
   datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/metadb?serverTimezone=Asia/Seoul
     username: root
     password: root1234
-    url: jdbc:mysql://localhost:3307/metadb
-    driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
     hibernate:
