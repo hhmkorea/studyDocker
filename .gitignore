@@ -8,6 +8,7 @@
 /ex09/db/store/
 /ex09/product/gradle/
 /ex09/my-app/node_modules/
+/ex09/my-app/build/
 /ex09/product/.gradle/
 /ex09/product/.idea/
 /ex09/product/build/
