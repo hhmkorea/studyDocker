@@ -1,9 +1,9 @@
-version: '3'
 services:
   db:  # 동일한 키워드(db)로 설정해야함.
     build:
       context: ./db
       dockerfile: Dockerfile
+    restart: always
     # 접근 포트 설정 (컨테이너 외부:컨테이너 내부)
     ports:
       - 3306:3307 #mysql 3307로 설치함(mariaDB가 3306로 설치되어 있어서 바꿈)
@@ -17,7 +17,6 @@ services:
       context: ./product
       dockerfile: Dockerfile
     restart: always
-    # 접근 포트 설정 (컨테이너 외부:컨테이너 내부)
     ports:
       - 8080:8080 #8080 사용중이면 앞에만 8081 포트로 변경해서 테스트
     depends_on:
